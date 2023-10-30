@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            Especialidades
+            {{ __('Edit Specialty') }}
         </h2>
     </x-slot>
 
@@ -26,11 +26,11 @@
                         <div class="flex items-center justify-end mt-4">
 
                             <button class="ml-3">
-                                <a href="{{ route("especialidades") }}">Cancelar</a>
+                                <a href="{{ route("especialidades") }}">{{ __("Cancel") }}</a>
                             </button>
 
                             <x-primary-button class="ml-3">
-                            Guardar
+                                {{ __("Save") }}
                             </x-primary-button>
                         </div>
                     </form>
