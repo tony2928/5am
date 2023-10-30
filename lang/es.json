@@ -49,14 +49,14 @@
 
     "Specialties": "Especialidades",
     "Specialty": "Especialidad",
-    "Edit specialty": "Editar especialidad",
-    "Create specialty": "Crear especialidad",
+    "Edit Specialty": "Editar especialidad",
+    "Add specialty": "Crear especialidad",
     "Specialty name": "Nombre de la especialidad",
     
     "Students": "Estudiantes",
     "Student": "Estudiante",
-    "Edit student": "Editar estudiante",
-    "Create student": "Crear estudiante",
+    "Edit Student": "Editar estudiante",
+    "Add student": "Crear estudiante",
     "Student No. Control": "No. Control del estudiante",
     "Student name": "Nombre del estudiante",
     "Student last name": "Apellido del estudiante",
