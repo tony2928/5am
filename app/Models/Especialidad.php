@@ -20,6 +20,4 @@ class Especialidad extends Model
         return $this -> hasMany(Student::class);
     }
 
-
-
 }

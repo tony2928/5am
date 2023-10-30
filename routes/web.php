@@ -54,7 +54,6 @@ Route::delete('/especialidades/delete/{id}', [EspecialidadesController::class, '
 
 // Students
 
-
 Route::get('/estudiantes', [StudentController::class, 'index'])
     ->name('students');
 
