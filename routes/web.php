@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\EspecialidadesController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +31,45 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// Especialidades
+
+Route::get('/especialidades', [EspecialidadesController::class, 'index'])
+    ->name('especialidades');
+
+Route::get('/especialidades/add', [EspecialidadesController::class, 'add'])
+    ->name('especialidades.add');
+
+Route::post('/especialidades/store', [EspecialidadesController::class, 'store'])
+    ->name('especialidades.store');
+
+Route::get('/especialidades/edit/{id}', [EspecialidadesController::class, 'edit'])
+    ->name('especialidades.edit');
+
+Route::post('/especialidades/update', [EspecialidadesController::class, 'update'])
+    ->name('especialidades.update');
+
+Route::delete('/especialidades/delete/{id}', [EspecialidadesController::class, 'delete'])
+    ->name('especialidades.delete');
+
+// Students
+
+
+Route::get('/estudiantes', [StudentController::class, 'index'])
+    ->name('students');
+
+Route::get('/estudiantes/add', [StudentController::class, 'add'])
+    ->name('students.add');
+
+Route::post('/estudiantes/store', [StudentController::class, 'store'])
+    ->name('students.store');
+
+Route::get('/estudiantes/edit/{id}', [StudentController::class, 'edit'])
+    ->name('students.edit');
+
+Route::post('/estudiantes/update', [StudentController::class, 'update'])
+    ->name('students.update');
+
+Route::delete('/estudiantes/delete/{id}', [StudentController::class, 'delete'])
+    ->name('students.delete');
+
