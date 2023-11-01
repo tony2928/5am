@@ -25,7 +25,7 @@
                             <th class="w-1/12 text-center">ID</th>
                             <th class="w-5/12">{{ __("Name") }}</th>
                             <th class="w-3/12">{{ __("Specialties") }}</th>
-                            <th class="w-3/12">Opciones</th>
+                            <th class="w-3/12">{{ __('Options') }}</th>
                         </tr>
                         </thead>
                         <tbody>

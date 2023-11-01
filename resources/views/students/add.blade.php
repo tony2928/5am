@@ -15,14 +15,14 @@
                         <!-- Nombre del Alumno -->
                         <div class="grid grid-cols-3 gap-4">
                             <div>
-                                <x-input-label for="name" value="Nombre"/>
+                                <x-input-label for="name" value="{{ __('Name') }}"/>
                                 <x-text-input id="name" class="block mt-1 w-full" type="text" name="name"
                                               :value="old('name')" autofocus/>
                                 <x-input-error :messages="$errors->get('name')" class="mt-2"/>
                             </div>
 
                             <div>
-                                <x-input-label for="lastname" value="Apellidos"/>
+                                <x-input-label for="lastname" value="{{ __('Lastname')}}"/>
                                 <x-text-input id="lastname" class="block mt-1 w-full" type="text" name="lastname"
                                               :value="old('lastname')" autofocus/>
                                 <x-input-error :messages="$errors->get('lastname')" class="mt-2"/>
@@ -40,13 +40,15 @@
 
                         <div class="grid grid-cols-3 gap-4 mt-4">
                             <div>
-                                <x-input-label for="group" value="Grupo"/>
-                                <x-text-input id="group" class="block mt-1 w-full" type="text" name="group"
-                                              :value="old('group')" autofocus/>
+                                <x-input-label for="group" value="{{ __('Group') }}"/>
+                                {{-- <x-text-input id="group" class="block mt-1 w-full" type="text" name="group"
+                                              :value="old('group')" autofocus/> --}}
+                                              <x-text-input id="group" class="block mt-1 w-full" type="text" name="group"
+                                              value="5 A" autofocus/>
                                 <x-input-error :messages="$errors->get('group')" class="mt-2"/>
                             </div>
                             <div>
-                                <x-input-label for="specialty_id" value="Especialidad"/>
+                                <x-input-label for="specialty_id" value="{{ __('Specialties') }}"/>
 
                                 <select id="specialty_id"
                                         class="w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm"
